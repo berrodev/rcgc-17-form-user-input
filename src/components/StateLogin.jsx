@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Input } from './Input.jsx';
 import { hasMinLength, isEmail, isNotEmpty } from '../util/validation.js';
 export default function Login() {
-  // const [enteredEmail, setEnteredEmail] = useState('');
-  // const [enteredPassword, setEnteredPassword] = useState('');
   const [enteredValues, setEnteredValues] = useState({
     email: '',
     password: '',
@@ -43,13 +41,6 @@ export default function Login() {
     }));
   }
 
-  // function handleEmailChange(event) {
-  //   setEnteredEmail(event.target.value);
-  // }
-
-  // function handlePasswordChange(event) {
-  //   setEnteredPassword(event.target.value);
-  // }
   return (
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
