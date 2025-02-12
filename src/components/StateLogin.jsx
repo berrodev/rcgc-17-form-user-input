@@ -19,13 +19,14 @@ export default function Login() {
       [identifier]: value,
     }));
   }
-  function handleEmailChange(event) {
-    setEnteredEmail(event.target.value);
-  }
 
-  function handlePasswordChange(event) {
-    setEnteredPassword(event.target.value);
-  }
+  // function handleEmailChange(event) {
+  //   setEnteredEmail(event.target.value);
+  // }
+
+  // function handlePasswordChange(event) {
+  //   setEnteredPassword(event.target.value);
+  // }
   return (
     <form onSubmit={handleSubmit}>
       <h2>Login</h2>
