@@ -18,6 +18,12 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    if (emailHasError || passwordHasError) {
+      return;
+    }
+
+    console.log(emailValue, passwordValue);
   }
 
   return (
